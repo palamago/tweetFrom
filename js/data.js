@@ -85,8 +85,6 @@ Data.prototype = (function() {
             }
         });
 
-         console.log(_toBarData);
-
    		return;
 
     };
