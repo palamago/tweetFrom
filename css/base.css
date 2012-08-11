@@ -23,3 +23,8 @@
     height:300px;
     overflow:hidden;
 }
+
+#tweetButtonContainer{
+	padding-left: 98px;
+	padding-top: 7px;
+}
