@@ -1,0 +1,25 @@
+#infovis {
+    position:relative;
+    width:600px;
+    height:600px;
+    margin:auto;
+    overflow:hidden;
+}
+
+#podiumContainer {
+	background-image: url(../img/medals.jpg);
+	background-position: center center;
+}
+
+#podium {
+    position:relative;
+    width:600px;
+    height:300px;
+    margin:auto;
+    overflow:hidden;
+}
+
+#avatar {
+    height:300px;
+    overflow:hidden;
+}
