@@ -66,18 +66,26 @@ Data.prototype = (function() {
 			_toPieData.values.push(obj);
 		});
 
-        console.log(_toPieData);
-
         //order
         _toPieData.values.sort(function(a, b){
             return b.values[0]-a.values[0];
         })
 
-        console.log(_toPieData);
-
         _toBarData.values[0] = _toPieData.values[1];
         _toBarData.values[1] = _toPieData.values[0];
         _toBarData.values[2] = _toPieData.values[2];
+
+         $.each(_toBarData.values,function(i,e){
+            if(!e){
+                obj={};
+                obj.label = i;
+                obj.values = [];
+                obj.values.push(0);
+                _toBarData.values[i] = obj;
+            }
+        });
+
+         console.log(_toBarData);
 
    		return;
 

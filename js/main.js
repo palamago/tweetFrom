@@ -49,6 +49,7 @@ jQuery(document).ready(function(){
 
 	function initLoad(){
 		$('#resultBlock').hide();
+		$('#userInfo img').attr('src','');
 
 		username = $('#username').val();
 		//loader on
